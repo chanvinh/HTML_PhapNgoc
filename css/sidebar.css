@@ -1,0 +1,68 @@
+/* BEGIN s-sidebar-4 */
+.s-sidebar-4 {
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.s-sidebar-4 .s_heading {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-radius: 3px 3px 0 0;
+  background-color: #450805;
+  box-shadow: 0 0 0 1px #450805;
+}
+.s-sidebar-4 .s_heading::before {
+  content: '\f0c9';
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.s-sidebar-4 > ul li > a {
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 13px 15px;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s all ease-in-out;
+}
+.s-sidebar-4 > ul li > a::before {
+  content: '\f105';
+  font-family: FontAwesome;
+  color: #999;
+}
+.s-sidebar-4 > ul li > a h2 {
+  display: inline;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-left: 7px;
+}
+.s-sidebar-4 > ul li > a:hover {
+  color: #8A0000;
+}
+.s-sidebar-4 > ul li > ul {
+  display: none;
+}
+.s-sidebar-4 > ul li > ul a {
+  padding: 13px 26px;
+  font-weight: normal;
+}
+.s-sidebar-4 > ul li > ul a::before {
+  content: "\f1db";
+  font-size: 0.616em;
+  position: relative;
+  top: 0.375em;
+  margin-right: 5px;
+}
+.s-sidebar-4 > ul li:last-child a {
+  border-bottom: none;
+}
+.s-sidebar-4 > ul li.is-active > a {
+  color: #8A0000;
+}
+.s-sidebar-4 > ul li.is-active > ul {
+  display: block;
+}
+
+/* END s-sidebar-4 */

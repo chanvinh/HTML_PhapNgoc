@@ -1,0 +1,283 @@
+/* BEGIN p-detail-3 */
+.p-detail-3 {
+    position: relative;
+}
+.p-detail-3 .p_box {
+    background-color: #fff;
+    padding: 50px;
+}
+.p-detail-3 .p_title {
+    font-size: 25px;
+    margin-bottom: 0.6em;
+}
+.p-detail-3 .p_source {
+    margin-bottom: 20px;
+}
+.p-detail-3 .p_source li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 0;
+}
+.p-detail-3 .p_source li span.fa::before {
+    color: #ffa500;
+}
+.p-detail-3 .p_job {
+    background-color: rgb(38 88 161 / 0.02);
+    padding: 10px 10px 15px 15px;
+    box-shadow: 0 0px 7px rgb(132 132 132 / 16%), 0 1px 3px rgb(138 138 138 / 23%);
+    border-left: 2px solid #5a0000;
+    margin-bottom: 20px;
+}
+.p-detail-3 .p_job li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.p-detail-3 .p_job li span::before {
+    color: #5a0000;
+    margin-top: 1px;
+}
+.p-detail-3 .p_desc {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.334em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.p-detail-3 .p_other {
+    margin-top: 20px;
+}
+.p-detail-3 .p_other>ul {
+    margin: 30px 0 0 40px;
+}
+.p-detail-3 .p_other>ul>li {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 10px;
+}
+.p-detail-3 .p_other>ul>li::before {
+    content: '\f105';
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+.p-detail-3 .p_other>ul>li a:hover {
+    color: #ffa500;
+}
+
+/* END p-detail-3 */
+/* Style chung c-upload */
+.c-upload>input {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* BEGIN c-upload-file */
+.c-upload-file.c_input {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.c-upload-file .c_file {
+    width: calc(100% - 30px);
+}
+.c-upload-file .c_file>div {
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    font-weight: 300;
+}
+.c-upload-file .c_file-filename {
+    display: none;
+}
+.c-upload-file .c_icon {
+    line-height: 0;
+}
+.c-upload-file .c_icon span {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+/* END c-upload-file */
+/* Style chung c-upload */
+.c-upload>input {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* BEGIN c-upload-file */
+.c-upload-file.c_input {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.c-upload-file .c_file {
+    width: calc(100% - 30px);
+}
+.c-upload-file .c_file>div {
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    font-weight: 300;
+}
+.c-upload-file .c_file-filename {
+    display: none;
+}
+.c-upload-file .c_icon {
+    line-height: 0;
+}
+.c-upload-file .c_icon span {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background-color: #8A0000;
+}
+.c-upload-file.is-active .c_file-text {
+    display: none;
+}
+.c-upload-file.is-active .c_file-filename {
+    display: block;
+    color: #111;
+}
+.c-upload-file.is-active .c_icon span:first-child {
+    display: inline-block;
+}
+/* BEGIN c-form-border */
+/* Copy when using c-form-border */
+.c-form-border {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -o-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+}
+.c-form-border .c_input {
+    padding: 1.215em 1.072em 1.215em 1.072em;
+    -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.c-form-border .c_input:focus {
+    outline: none;
+    border-color: #00aeef;
+}
+.c-form-border--icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.c-form-border--icon .c_input {
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    z-index: 2;
+}
+.c-form-border--icon .c_icon {
+    -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.c-form-border--icon .c_icon:first-child {
+    padding: 0.5em 0 0.5em 1.072em;
+}
+.c-form-border--icon .c_icon:nth-child(2) {
+    padding: 0.5em 1.072em 0.5em 0;
+}
+.c-form-border--icon .c_icon:not(.c_icon--top) {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.c-form-border--icon i::before {
+    color: #8A0000;
+}
+.c-form-border--icon .c_icon--top>i {
+    position: relative;
+    top: -0.142em;
+}
+.c-form-border--label .c_label {
+    color: #999;
+    background-color: #fff;
+    pointer-events: none;
+    padding: 0 0.358em 0 0.358em;
+    z-index: 9;
+    position: absolute;
+    top: 0.572em;
+    left: 0.715em;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.c-form-border--label:not(.is-empty) .c_label, .c-form-border--label.is-focused .c_label {
+    font-size: 0.786em;
+    color: #00aeef;
+    position: absolute;
+    top: -0.727em;
+}
+.c-form-border.is-focused {
+    border-color: #00aeef;
+}
+.c-form-border.is-error {
+    margin-bottom: 1.786em;
+    border-color: #f55145;
+}
+.c-form-border.is-error .c_label {
+    color: #f55145 !important;
+}
+.c-form-border.is-error .c_icon+.c_error {
+    left: 0.143em;
+    text-align: left;
+}
+.c-form-border.is-error .c_icon+.c_error>span {
+    left: 0;
+    margin: 0;
+}
+
+/* END c-form-border */
+
+/* END c-radio */
+/* END c-upload-file */
+@media screen and (max-width: 767px) {
+    .p-detail-3 .p_title {
+        font-size: 20px;
+    }
+    .p-detail-3 .p_source li.date {
+        display: none;
+    }
+    .p-detail-3 .p_other>ul {
+        margin: 20px 0 0 10px;
+    }
+}
+@media screen and (max-width: 575px){
+    .p-detail-3 .p_box{
+        padding: 15px;
+    }
+}

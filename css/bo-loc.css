@@ -1,0 +1,219 @@
+/* begin filter */
+.s_filter {
+    background-color: hsl(0deg 100% 18% / 10%);
+    position: relative;
+    padding: 10px 0;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    margin-bottom: 25px;
+}
+.s_filter .c-button-8 {
+  margin-left: 20px;
+    padding: 8px 10px 10px 7px;
+    border-radius: 3px;
+    height: 36px;
+    width: 36px;
+    background-color: #8A0000;
+}
+.s_filter .row {
+    width: 90%;
+}
+.s_filter .row>div {
+    position: relative;
+}
+.s_filter .row>div:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: -1px;
+    width: 1px;
+    height: 65%;
+    z-index: 1111;
+    background-color: rgba(255, 0, 0, 0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), color-stop(50%, #ccc), to(rgba(255, 0, 0, 0)));
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(0 105 45 / 20%) 50%, rgba(255, 0, 0, 0));
+}
+.s_filter a {
+    margin-left: 10px;
+}
+/* end filter */
+/* Style chung select */
+.c-select {
+    position: relative;
+}
+.c-select.c-form>.c-icons {
+    width: 12px;
+}
+.c-select.c-form>.c_input {
+    padding: 0;
+}
+.c-select>.c_input {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 30px 0 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: #fff; */
+}
+.c-select>.c-icons {
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    color: #888;
+}
+.c-select>.c-icons>i {
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.c-select .c_list {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    max-height: 250px;
+    line-height: 20px;
+    padding: 5px;
+    background-color: #fff;
+    overflow: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    z-index: 10000;
+    position: absolute;
+    top: 35px;
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+.c-select.is-focused .c_list {
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+}
+.c-select.is-focused>.c-icons i {
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-transform: rotate(180deg) translate(50%, 50%);
+    transform: rotate(180deg) translate(50%, 50%);
+}
+
+/* BEGIN c-select-single */
+.c-select .c-radio {
+    font-size: 13px;
+    padding: 0 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    transition: all 150ms linear;
+}
+.c-select .c-radio:hover, .c-select .c-radio.is-selected {
+    color: #fff;
+    background-color: #8A0000;
+    box-shadow: #8A0000 0px 3px 6px, #8A0020 0px 3px 6px;
+}
+.c-select .c-radio label {
+    display: block;
+    color: inherit;
+    padding: 10px 0;
+}
+.c-select .c-radio label:hover {
+    color: #fff;
+}
+
+/* END c-select-single */
+/* BEGIN c-form-border */
+/* Copy when using c-form-border */
+.c-form-border {
+    border: 1px solid #DBD5D5;
+    border-radius: 3px;
+    transition: border-color 0.5s ease-in-out;
+    background-color: #fff;
+}
+.c-form-border .c_input:focus {
+    outline: none;
+    border-color: #05a;
+}
+.c-form-border--icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.c-form-border--icon .c_input {
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    z-index: 2;
+}
+.c-form-border--icon .c_icon {
+    -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.c-form-border--icon .c_icon:first-child {
+    padding: 0.5em 0 0.5em 1.072em;
+}
+.c-form-border--icon .c_icon:nth-child(2) {
+    padding: 0.5em 1.072em 0.5em 0;
+}
+.c-form-border--icon .c_icon:not(.c_icon--top) {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.c-form-border--icon .c_icon--top>i {
+    position: relative;
+    top: -0.142em;
+}
+.c-form-border--label .c_label {
+    color: #999;
+    background-color: #fff;
+    pointer-events: none;
+    padding: 0 0.358em 0 0.358em;
+    z-index: 9;
+    position: absolute;
+    top: 0.572em;
+    left: 0.715em;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.c-form-border--label:not(.is-empty) .c_label, .c-form-border--label.is-focused .c_label {
+    font-size: 0.786em;
+    color: #05a;
+    position: absolute;
+    top: -0.727em;
+}
+.c-form-border.is-focused {
+    border-color: #620001;
+}
+.c-form-border:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.c-form-border.is-error {
+    margin-bottom: 1.786em;
+    border-color: #f55145;
+}
+.c-form-border.is-error .c_label {
+    color: #f55145 !important;
+}
+.c-form-border.is-error .c_icon+.c_error {
+    left: 0.143em;
+    text-align: left;
+}
+.c-form-border.is-error .c_icon+.c_error>span {
+    left: 0;
+    margin: 0;
+}
+
+/* END c-form-border */

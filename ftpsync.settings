@@ -1,0 +1,12 @@
+{
+    "default": {
+
+        "host": "125.212.252.103",
+        "username": "web10",  // or null for anonymous login
+        "password": "Rjgdk#758gdg",
+        "path": "/domains/demo10103.seomarketing.edu.vn/public_html/phapngoc_layout",
+
+        "upload_on_save": true, // set *false* if you do not want to upload on save!
+        "overwrite_newer_prevention": false,
+    }
+}

@@ -1,0 +1,53 @@
+.p-detail-4 {
+	background-color: #fff;
+	margin: 0;
+	position: relative;
+}
+.p-detail-4 .ht-format-detail {
+	padding: 25px 10px;
+	text-align: justify;
+}
+.p-detail-4 .text-center em {
+	margin-bottom: 30px;
+	display: block;
+	font-size: 12px;
+}
+.s-about {
+    padding: 50px 0 25px;
+    background-image: url('../images/gioithieu/4.jpg');
+    background-size: cover;
+}
+.s-about h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #f60;
+}
+.s-about p {
+    text-align: justify;
+    line-height: 1.5;
+}
+.s-about .ht-ratio--75 {
+    overflow: unset;
+}
+.s-about img {
+    box-shadow: 15px -10px 1px #aa782f;
+}
+.s-about .c-btn {
+    float: right !important;
+}
+@media (max-width: 1024px) {
+	.s-about {
+		padding: 25px 0;
+	}
+	.s-about h1 {
+		text-align: center
+	}
+}
+@media (max-width: 480px) {
+	.s-about h1 {
+		font-size: 20px;
+	}
+	.s-about img {
+        box-shadow: none;
+    }
+}
